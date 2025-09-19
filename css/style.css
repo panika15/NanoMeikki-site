@@ -282,10 +282,7 @@
     }
     
     .services_carts_cart {
-        display: flex;
-        justify-content: space-between;
         flex: 1 1 calc(33.333% - 10px);
-        flex-direction: column;
         background: var(--white);
         padding: 15px;
         border-radius: 10px;
@@ -924,7 +921,7 @@
             justify-content: space-between;
             gap: 10px;
             flex-wrap: wrap;
-            flex: 1 1 calc(50% - 10px);
+            flex: 1 1 calc(33.333% - 10px);
         }
         .services_carts_cart {
             max-width: 100%;
@@ -1003,6 +1000,18 @@
         .contacts_right_logo .header_heading_left {
             flex-wrap: wrap;
             padding-left: 0;
+        }
+        .blog_heading {
+            margin-top: 50px;
+        }
+    }
+    
+    @media(max-width:695px) {
+        .blog_carts {
+            flex-direction: column;
+        }
+        .blog_heading {
+            margin-top: 100px;
         }
     }
     
